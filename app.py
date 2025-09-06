@@ -11,7 +11,7 @@ from textwrap import wrap
 app = Flask(__name__)
 # Allow your Hostinger site to call this API
 # For stricter security, replace "*" with "https://YOURDOMAIN.com"
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, resources={r"/*": {"origins": "https://lightgreen-llama-621491.hostingersite.com"}})
 
 @app.get("/")
 def health():
